@@ -1,9 +1,10 @@
-import './App.css';
+import React from 'react';
+import LandingPage from './page/LandingPage';
 
 function App() {
   return (
     <>
-      <h1>Ada Portfolio</h1>
+      <LandingPage />
     </>
   );
 }
