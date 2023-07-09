@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #E5ECEF;
+  font-family: "Lexend Deca", "Montserrat", sans-serif;
+  font-weight: 400;
 }
