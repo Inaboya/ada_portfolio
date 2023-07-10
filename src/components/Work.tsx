@@ -1,8 +1,14 @@
 import React from "react";
 
-const Work: React.FC = () => {
+interface WorkInterface {
+  workRef: React.RefObject<HTMLDivElement> | null;
+}
+
+const Work: React.FC<WorkInterface> = ({workRef}) => {
+  // const workRef = React.useRef<HTMLDivElement>(null);
+
   return (
-    <div className="work-container">
+    <div className="work-container" ref={workRef}>
       <div className="work-wrapper">
         <h1 className="work-title">MY WORK</h1>
         <p className="work-paragraph">Selected Recent Work</p>

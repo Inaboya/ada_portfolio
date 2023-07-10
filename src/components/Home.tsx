@@ -1,8 +1,12 @@
 import React from "react";
 
-const Home: React.FC = () => {
+interface HomeInterface {
+  workRef: React.RefObject<HTMLDivElement> | null;
+}
+
+const Home: React.FC<HomeInterface> = ({ workRef }) => {
   return (
-    <div className="home-container">
+    <div className="home-container" ref={workRef}>
       <div className="home-wrapper">
         <p className="job-title">UI / UX Designer</p>
         <h1 className="home-heading">Blessing Onyebuchi</h1>
@@ -14,11 +18,16 @@ const Home: React.FC = () => {
         </p>
 
         <div className="button-container">
-            <button className="btn">
-                GET IN TOUCH <span className="button-img">
-                    <img src={require("../assets/arrow_right.png")} className="btn-img-item" alt="" />
-                </span>
-            </button>
+          <button className="btn">
+            GET IN TOUCH{" "}
+            <span className="button-img">
+              <img
+                src={require("../assets/arrow_right.png")}
+                className="btn-img-item"
+                alt=""
+              />
+            </span>
+          </button>
         </div>
       </div>
     </div>
