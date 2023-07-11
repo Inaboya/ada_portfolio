@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarInterface> = ({ workRef }) => {
             </div>
 
             <div>
-              <NavLink className="navbar__menu--item" to="/">
+              <NavLink className="navbar__menu--item" to="/about">
                 About Me
               </NavLink>
             </div>

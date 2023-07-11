@@ -8,7 +8,7 @@ const Contact: React.FC<ContactInterface> = ({ workRef }) => {
   return (
     <div className="work-container" ref={workRef}>
       <div className="work-wrapper">
-        <h1 className="work-title">LET'S CONNECT</h1>
+        <h1 className="work-title">ENQUIRY FORM</h1>
         <p className="work-paragraph">I'm always down for collaborations</p>
 
         <div className="content-content">
