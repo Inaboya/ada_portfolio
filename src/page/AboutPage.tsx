@@ -94,9 +94,9 @@ const AboutPage: React.FC = () => {
             </ul>
           </div>
         </div>
-
-        <Footer />
       </div>
+
+      <Footer />
     </>
   );
 };
