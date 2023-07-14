@@ -4,6 +4,22 @@ import Footer from "../components/Footer";
 
 const AboutPage: React.FC = () => {
   const workRef = React.useRef<HTMLDivElement>(null);
+
+  const handleDownload = () => {
+    const fileURL = require("../assets/Blessing_Onyebuchi_Resume.pdf");
+
+    const link = document.createElement("a");
+
+    link.href = fileURL;
+
+    link.setAttribute("download", "");
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+  };
   return (
     <>
       <header className="header-container">
@@ -48,7 +64,7 @@ const AboutPage: React.FC = () => {
               </p>
 
               <div className="button-container">
-                <button className="btn">
+                <button className="btn" onClick={handleDownload}>
                   <span className="btn-image">
                     <img
                       src={require("../assets/download.png")}

@@ -4,7 +4,7 @@ interface WorkInterface {
   workRef: React.RefObject<HTMLDivElement> | null;
 }
 
-const Work: React.FC<WorkInterface> = ({workRef}) => {
+const Work: React.FC<WorkInterface> = ({ workRef }) => {
   // const workRef = React.useRef<HTMLDivElement>(null);
 
   return (
@@ -21,36 +21,58 @@ const Work: React.FC<WorkInterface> = ({workRef}) => {
                 className="work-image-item"
                 alt=""
               />
-              {/* <div className="work-image-text">
-                <h1 className="work-image-title">Project 1</h1>
+
+              <div className="work-image-text">
+                <h3 className="work-image-title">LytChow</h3>
                 <p className="work-image-paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  Food delivery app and responsive web
                 </p>
-              </div> */}
+              </div>
             </div>
 
-            <div className="work-image-container">
+            <div className="work-image-container-1">
               <img
                 src={require("../assets/work2.png")}
                 className="work-image-item"
                 alt=""
               />
+
+              <div className="work-image-text">
+                <h3 className="work-image-title">Nautic Mobile</h3>
+                <p className="work-image-paragraph">
+                  Transportation app
+                </p>
+              </div>
             </div>
 
-            <div className="work-image-container">
+            <div className="work-image-container-2">
               <img
                 src={require("../assets/work3.png")}
                 className="work-image-item"
                 alt=""
               />
+
+              <div className="work-image-text">
+                <h3 className="work-image-title">Bank</h3>
+                <p className="work-image-paragraph">
+                  Personal banking website
+                </p>
+              </div>
             </div>
 
-            <div className="work-image-container">
+            <div className="work-image-container-3">
               <img
                 src={require("../assets/work4.png")}
                 className="work-image-item"
                 alt=""
               />
+
+              <div className="work-image-text">
+                <h3 className="work-image-title">CoinPort</h3>
+                <p className="work-image-paragraph">
+                  Cryptocurrency portfolio management app
+                </p>
+              </div>
             </div>
           </div>
         </div>
