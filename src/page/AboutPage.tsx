@@ -20,6 +20,7 @@ const AboutPage: React.FC = () => {
 
     document.body.removeChild(link);
   };
+
   return (
     <>
       <header className="header-container">
