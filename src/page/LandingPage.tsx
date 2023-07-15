@@ -12,9 +12,12 @@ const LandingPage: React.FC = () => {
       <header className="header-container">
         <Navbar workRef={workRef} />
       </header>
-      <Home workRef={workRef} />
-      <Work workRef={workRef} />
-      <Contact workRef={workRef} />
+
+      <div className="landing-container">
+        <Home workRef={workRef} />
+        <Work workRef={workRef} />
+        <Contact workRef={workRef} />
+      </div>
 
       <Footer />
     </>
