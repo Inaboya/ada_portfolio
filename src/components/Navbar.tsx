@@ -19,6 +19,23 @@ const Navbar: React.FC<NavbarInterface> = ({ workRef }) => {
     setOpenMenu(!openMenu);
   };
 
+  // check if large screen set openMenu to false
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setOpenMenu(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+
+  }, [openMenu]);
+
   return (
     <div className="navbar__container">
       {openMenu && (
