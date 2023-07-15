@@ -149,8 +149,14 @@
 }
 
 .work-container,
-.contact-container {
+.contact-container, .about-container {
   background: #f1f0f6;
+}
+
+.about-container {
+  width: 100%;
+  /* height: 100%; */
+  overflow: scroll;
 }
 
 .work-wrapper {
