@@ -68,7 +68,7 @@ const Footer = () => {
 
             <div className="footer-links">
               <Link
-                to={"exemple.com"}
+                to={"mailto:blessingonyebuchi8888@gmail.com"}
                 rel="noreferrer"
                 target={"_blank"}
                 className="footer-links"

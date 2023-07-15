@@ -1,10 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 interface HomeInterface {
   workRef: React.RefObject<HTMLDivElement> | null;
 }
 
 const Home: React.FC<HomeInterface> = ({ workRef }) => {
+  const location = useNavigate();
+
+  const handleClick = () => {
+    location("/about");
+  };
   return (
     <div className="home-container" ref={workRef}>
       <div className="home-wrapper">
@@ -17,7 +23,7 @@ const Home: React.FC<HomeInterface> = ({ workRef }) => {
           thier engagement.
         </p>
 
-        <div className="button-container">
+        <div className="button-container" onClick={handleClick}>
           <button className="btn">
             GET IN TOUCH{" "}
             <span className="button-img">
