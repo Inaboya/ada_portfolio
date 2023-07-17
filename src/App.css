@@ -230,7 +230,7 @@
   background: #e6ece9;
   border-radius: 5px;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
   overflow: hidden;
 }
 
@@ -254,38 +254,38 @@
 
 .work-image-container:hover .work-image-text {
   /* opacity: 1; */
-  animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 .work-image-container-1:hover .work-image-text {
   /* opacity: 1; */
-  animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 .work-image-container-2:hover .work-image-text {
   /* opacity: 1; */
-  animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 .work-image-container-3:hover .work-image-text {
   /* opacity: 1; */
-  animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 .work-image-container:hover .work-image-item {
-  animation: slideInFromLeft 0.5s ease-in-out forwards;
+  animation: slideInFromLeft 0.8s ease-in-out forwards;
 }
 
 .work-image-container-1:hover .work-image-item {
-  animation: slideInFromLeft 0.5s ease-in-out forwards;
+  animation: slideInFromLeft 0.8s ease-in-out forwards;
 }
 
 .work-image-container-2:hover .work-image-item {
-  animation: slideInFromLeft 0.5s ease-in-out forwards;
+  animation: slideInFromLeft 0.8s ease-in-out forwards;
 }
 
 .work-image-container-3:hover .work-image-item {
-  animation: slideInFromLeft 0.5s ease-in-out forwards;
+  animation: slideInFromLeft 0.8s ease-in-out forwards;
 }
 
 .work-image-text {
